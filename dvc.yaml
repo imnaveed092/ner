@@ -1,0 +1,10 @@
+# add stages here 
+stages:
+   Data Ingestion:
+     cmd: python src/NER_data_ingestion/data_ingestion.py
+     deps:
+     - src/NER_data_ingestion/data_ingestion.py
+     - src/NER_utils
+     outs:
+     - artifacts\cache_dir
+
